@@ -21,7 +21,7 @@ parameters:
   f_max:
     value: 18000
   n_epochs:
-    value: 2 
+    value: 50 
   arch:
     values:
     - resnet18
