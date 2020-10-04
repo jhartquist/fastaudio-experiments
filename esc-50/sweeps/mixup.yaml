@@ -1,0 +1,10 @@
+program: train.py
+method: grid
+project: fastaudio-esc-50
+parameters:
+  n_epochs:
+    values: [10, 20, 80]
+  mix_up:
+    values: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+  trial_num:
+    values: [1, 2, 3, 4, 5]

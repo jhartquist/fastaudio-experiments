@@ -1,0 +1,12 @@
+program: train.py
+method: grid
+project: fastaudio-esc-50
+parameters:
+  n_epochs:
+    values: [10, 20, 80]
+  win_length:
+    value: 1024
+  n_fft:
+    values: [1024, 2048, 4096, 8192, 16384]
+  trial_num:
+    values: [1, 2, 3, 4, 5]

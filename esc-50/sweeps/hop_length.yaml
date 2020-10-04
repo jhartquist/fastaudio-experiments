@@ -1,0 +1,10 @@
+program: train.py
+method: grid
+project: fastaudio-esc-50
+parameters:
+  n_epochs:
+    values: [10, 20, 80]
+  hop_length:
+    values: [220, 264, 308, 352, 396, 441, 485, 529, 573, 617, 661, 705, 749, 793, 837, 882]
+  trial_num:
+    values: [1, 2, 3, 4, 5]
