@@ -6,4 +6,18 @@ from fastai.callback.wandb import *
 
 
 path = untar_data(URLs.ESC50)
-model = resnet18(pretrained=True)
+models = [
+    resnet18,
+    resnet34,
+    resnet50,
+    resnet101,
+    resnet152,
+    densenet121,
+    densenet161,
+    densenet169,
+    densenet201,
+]
+
+# download weights for each model
+for model in models:
+    model(pretrained=True)
