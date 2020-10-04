@@ -4,7 +4,7 @@ project: fastaudio-esc-50
 parameters:
   n_epochs:
     values: [10, 20, 80]
-  batch_size:
+  f_max:
     values: [8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000, 22000]
   trial_num:
     values: [1, 2, 3, 4, 5]
