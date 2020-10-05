@@ -3,7 +3,7 @@ method: grid
 project: fastaudio-esc-50
 parameters:
   batch_size:
-    value: 64
+    value: 32 
   sample_rate:
     value: 44100
   hop_length:
