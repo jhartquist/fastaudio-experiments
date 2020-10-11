@@ -1,11 +1,10 @@
 from fastai.vision.all import *
 from fastaudio.core.all import *
 
-import wandb
-from fastai.callback.wandb import *
-
-
+# ensure the dataset is downloaded to the local machine
 path = untar_data(URLs.ESC50)
+
+# ensure all the pretrained weights are downloaded
 models = [
     resnet18,
     resnet34,
@@ -17,7 +16,5 @@ models = [
     densenet169,
     densenet201,
 ]
-
-# download weights for each model
 for model in models:
     model(pretrained=True)
